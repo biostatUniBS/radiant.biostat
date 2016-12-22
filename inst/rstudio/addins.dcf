@@ -1,0 +1,4 @@
+Name: Radiant - Biostat
+Description: Start Radiant - Biostat app
+Binding: radiant.biostat
+Interactive: true
