@@ -21,7 +21,7 @@ summary.correlation_ <- function(object,
   cr[!ltmat] <- ""
 
   ## Use format.pval instead if formatnr and get more decimals
-	cp <- apply(cmat$p, 2, format.pval, dec = 3,eps=0.001) %>%
+	cp <- apply(cmat$p, 2, format.pval, digits = 3,eps=0.001) %>%
 		format(justify = "right") %>%
 		set_rownames(rownames(cmat$p))
 	cp[is.na(cmat$p)] <- "-"
